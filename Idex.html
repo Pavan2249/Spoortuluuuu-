@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Valentine’s Day 💖</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ff4d6d, #ff758c);
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.15);
+      padding: 40px 25px;
+      border-radius: 24px;
+      max-width: 420px;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 300;
+      margin-bottom: 30px;
+    }
+
+    button {
+      padding: 14px 32px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 30px;
+      background: #fff;
+      color: #ff4d6d;
+      cursor: pointer;
+      font-weight: 600;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+
+    .inside {
+      display: none;
+      margin-top: 25px;
+      animation: fadeIn 0.8s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .heart {
+      font-size: 3rem;
+      margin: 15px 0;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 0.85rem;
+      opacity: 0.85;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <!-- LOGIN / ENTRY PAGE -->
+    <div id="login">
+      <h1>Happy Valentine’s Day 💖</h1>
+      <h2>Spoortuluuuu, this page is only for you</h2>
+      <button onclick="enterPage()">Open my heart ❤️</button>
+    </div>
+
+    <!-- INSIDE CONTENT -->
+    <div class="inside" id="inside">
+      <div class="heart">💖</div>
+      <p>
+        Ee roju mana <strong>first Valentine’s Day</strong> ❤️<br /><br />
+        Idhi oka simple date kaadu…<br />
+        Mana story start ayina oka beautiful moment ✨<br /><br />
+        Ee okka Valentine kaadu,<br />
+        Ilaanti <strong>infinite Valentine’s Days</strong> mana madhya undaali ani naa wish 💞<br /><br />
+        Life lo enni ups & downs vachina,<br />
+        Naa side lo nuvvu unte chaalu 🫶<br /><br />
+        <strong>Spoortuluuuu… nuvvu naaku chala, chala special ❤️</strong><br /><br />
+        <em>Forever & always, every Valentine and every day 💞</em>
+      </p>
+      <footer>
+        — Pavan 💌
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    function enterPage() {
+      document.getElementById('login').style.display = 'none';
+      document.getElementById('inside').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
